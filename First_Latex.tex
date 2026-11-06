@@ -1,0 +1,42 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage{amsmath}
+\usepackage{natbib}
+
+\title{My First \LaTeX{} Document}
+\author{Student Name}
+\date{\today}
+\begin{document}
+\maketitle
+\section{Introduction}
+This is my first \LaTeX{} document.
+
+\subsection{A Subsection}
+This is a subsection.
+
+\section{A Numbered List}
+\begin{enumerate}
+  \item First item
+  \item Second item
+  \item Third item
+\end{enumerate}
+
+\section{Science!}
+Einstein's famous equation is $e = mc^{2}$.
+\section{Equations and Citations}
+
+Einstein's mass--energy equivalence, $e = mc^{2}$, was published in \citet{einstein1905}.
+
+The Schr\"{o}dinger equation \citep{schrodinger1926} is:
+\begin{equation}
+  \label{eq:schrodinger}
+  i\hbar \frac{\partial}{\partial t} \Psi(\mathbf{r}, t)
+  = \left[ -\frac{\hbar^{2}}{2\mu} \nabla^{2} + V(\mathbf{r}, t) \right]
+  \Psi(\mathbf{r}, t)
+\end{equation}
+
+Equation~\ref{eq:schrodinger} describes how the quantum state of a system changes with time.
+
+\bibliographystyle{agu}
+\bibliography{physics}
+\end{document}
+

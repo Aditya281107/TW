@@ -1,0 +1,64 @@
+\documentclass[12pt, a4paper]{article}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\begin{document}
+
+\begin{center}
+  {\LARGE \textbf{Assignment 2}}
+\end{center}
+\vspace{1em}
+
+\section{Basics}
+
+This famous Einstein's mass-energy equation, $E = m.c^{2}$ should be rendered inline.
+However the following equation of motion should be rendered in a block:
+\[ v = u + a.t \]
+
+\section{Fractions \& Roots}
+
+\[ x_{i} = \frac{\sqrt{a^{2} + b^{2}_{i}}}{c_{i}} \]
+
+\section{Symbols \& Math-fonts}
+
+\[ G_{\mu\nu} + \Lambda g_{\mu\nu} = \kappa T_{\mu\nu}, \quad \forall x \in \mathbf{R} \; \exists \; \varepsilon > 0 \Rightarrow |x| < \varepsilon \]
+\[ \mathcal{F}(\theta) = \sum_{k=0}^{n} \binom{n}{k} \theta^{k} (1 - \theta)^{n-k} \]
+
+\section{Calculus}
+
+\[ \frac{du}{dx} + \frac{\partial u}{\partial t} = \alpha \frac{\partial^{2} u}{\partial x^{2}} \]
+\[ \int_{0}^{1} (3x^{2} + 2x + 1) \, dx \]
+
+\section{Multi-line equations}
+
+\subsection{Centering \& alignment}
+
+\begin{gather}
+  x = 5 \\
+  x + y = 3
+\end{gather}
+
+\begin{align}
+  x &= 5 \\
+  x + y &= 3
+\end{align}
+
+\subsection{Multiline equation}
+
+\begin{multline}
+  (x + y + z)^{3} = (x + y + z).(x + y + z).(x + y + z) = x^{3} + y^{3} + z^{3} + \\
+  3x^{2}y + 3xy^{2} + 3y^{2}z + 3yz^{2} + 3x^{2}z + 3xz^{2} + 6xyz
+\end{multline}
+
+\section{Matrices}
+
+\[
+\begin{matrix} 1 & 2 \\ 3 & 4 \end{matrix} \qquad
+\begin{bmatrix} 1 & 2 \\ 3 & 4 \end{bmatrix} \qquad
+\begin{vmatrix} 1 & 2 \\ 3 & 4 \end{vmatrix} \qquad
+\begin{pmatrix} 1 & 2 \\ 3 & 4 \end{pmatrix}
+\]
+
+\end{document}
+
