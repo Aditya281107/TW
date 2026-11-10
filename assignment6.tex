@@ -1,0 +1,110 @@
+\documentclass{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{xcolor}
+\usepackage{pagecolor}
+\usepackage{makeidx}
+
+\makeindex
+
+\definecolor{pagebg}{HTML}{F6E9BD}
+\pagecolor{pagebg}
+
+\renewcommand{\thesection}{\Alph{section}}
+
+\newsavebox{\mybox}
+\savebox{\mybox}{\fbox{This message is written in a savebox.}}
+
+\title{\textbf{Assignment 6 - Document Structure}\\\large TW Lab 2025}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+\vspace{-2em}
+
+\noindent Write \TeX{} code to output the following sections. Also follow any instructions provided in the document. Use \TeX{} reference and appropriate packages wherever required.
+
+\section{Fonts and background}
+\index{background}
+
+Try to match the page background color. Then create the following trivlist:
+
+\begin{trivlist}
+    \item This text is written in DejaVu Serif, the main font.
+    \item \textsf{This text is written in DejaVu Sans, the sans-serif font.}
+    \item \texttt{This text is written in Courier, the monospace font.}
+\end{trivlist}
+
+Use the package fontspec and make sure that you configure TeXstudio to use XeLaTeX as the default compiler.
+
+\section{Spacing}
+
+This is the first line of a paragraph. \\
+This is another line, but not another paragraph.
+
+\vspace{1cm}
+This paragraph starts 1cm below. Now, observe both the paragraphs given below and how they differ in hyphenation:
+
+\begin{quote}
+\noindent\fbox{\parbox{\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax}{%
+This is another paragraph. Incomprehensibilities and antidisestablishmentarianisms are two long words.
+}}
+\end{quote}
+
+\begin{quote}
+\noindent\fbox{\parbox{\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax}{%
+\sloppy
+This is another paragraph. Incomprehensibilities and antidisestablishmentarianisms are two long words.
+}}
+\end{quote}
+
+Recreate the paragraphs above and then continue from next page, leaving space for section C.
+
+\newpage
+
+\stepcounter{section}
+
+\section{Numbering}
+\index{numbering}
+
+Ensure that all sections are numbered using alphabets.
+
+\begin{equation}
+\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1
+\end{equation}
+
+\begin{equation}
+x^2 + y^2 = 1
+\end{equation}
+
+Equation 2 denotes a circle. Now add the equation of an ellipse before the equation of the circle.
+
+\section{Boxes and Lines}
+\index{savebox}
+
+\noindent \usebox{\mybox} \par
+\vspace{2pt}
+\noindent \usebox{\mybox} \par
+\vspace{2pt}
+\noindent \usebox{\mybox}
+
+\vspace{0.5cm}
+\noindent \fbox{\parbox{5cm}{This message is wrapped in a 5cm paragraph box.}}
+
+\vspace{0.5cm}
+\noindent Note that these boxes are used for highlighting and layout design. Create an index of some relevant terms from this document. Also add the bibliography [2] as shown in the following pages. Add the missing entry to the Latex-in-short book [1], in the bib file attached and cite it appropriately. Carefully understand how index file and bib files are compiled.
+
+\newpage
+\printindex
+
+\newpage
+\begin{thebibliography}{9}
+\bibitem{oetiker2021}
+Oetiker, T. The Not So Short Introduction to \LaTeX{} 2$\varepsilon$. CTAN, 2021.
+
+\bibitem{overleaf}
+Overleaf. Bibliography management with bibtex. Overleaf.
+\end{thebibliography}
+
+\end{document}

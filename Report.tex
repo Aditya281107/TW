@@ -1,0 +1,61 @@
+\documentclass[12pt, a4paper]{report}
+\usepackage[margin=1in]{geometry}
+\usepackage{xcolor}
+\usepackage{sectsty}
+\usepackage{fancyhdr}
+
+\chapterfont{\color{red}\bfseries\huge}
+\sectionfont{\color{magenta}\itshape\large}
+\subsectionfont{\color{orange}}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{Aditya}
+\fancyhead[C]{TW}
+\fancyhead[R]{\today}
+\fancyfoot[C]{\thepage}
+
+\fancypagestyle{plain}{
+    \fancyhf{}
+    \fancyhead[L]{Aditya}
+    \fancyhead[C]{TW}
+    \fancyhead[R]{\today}
+    \fancyfoot[C]{\thepage}
+}
+
+\begin{document}
+
+\begin{titlepage}
+    \centering
+    \vspace*{2cm}
+    {\Huge\bfseries Introduction to \LaTeX\par}
+    \vspace{2.5cm}
+    {\Large Aditya\par}
+    \vspace{0.5cm}
+    {ID: 2025UCP1043\par}
+    \vspace{2cm}
+    {Course: TW\par}
+    \vspace{0.3cm}
+    \vfill
+    {\today\par}
+\end{titlepage}
+
+\begin{abstract}
+This document provides an introduction to \LaTeX{} typesetting, covering the configuration of the report document class, custom title page creation, header customization, and styling of section headings with packages like \texttt{sectsty}.
+\end{abstract}
+
+\chapter{Overview}
+\section{Introduction}
+This section introduces the foundational concepts of the document.
+
+\subsection{Background}
+Here is a sample subsection to demonstrate the orange heading style.
+
+\chapter{Core Concepts}
+\section{Document Formatting}
+This section discusses formatting text, lists, and layout parameters.
+
+\subsection{Typography}
+Details regarding fonts, spacing, and structural components.
+
+\end{document}

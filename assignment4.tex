@@ -1,0 +1,107 @@
+\documentclass{article}
+\usepackage[a4paper, margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{caption}
+
+\definecolor{mycolor1}{RGB}{200, 20, 200}
+\colorlet{mycolor2}{red!60!yellow}
+
+\title{\textbf{Assignment 4 - Lists, Colors, Figures etc.}\\\large TW Lab 2025}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+\vspace{-2em}
+
+\noindent Write \LaTeX{} code to output the following sections as it is. Use \LaTeX{} reference and appropriate packages wherever required.
+
+\section{Lists}
+
+Following are some technologies that can be used to format content:
+\begin{itemize}
+    \item \LaTeX
+    \item HTML (+CSS)
+    \item Markdown
+\end{itemize}
+
+You would most likely use \LaTeX{} in the following scenarios:
+\begin{enumerate}
+    \item To write research papers
+    \item To embed math equations within other software (e.g. GDocs, HTML etc.)
+    \item To create your CV, project reports \& presentations
+\end{enumerate}
+
+There are three main categories of electronic markup:
+\begin{description}
+    \item[Presentational] Used by traditional word-processing systems: binary codes embedded within document text that produce the WYSIWYG (``what you see is what you get'') effect. e.g. Microsoft Word
+    \item[Porcedural] Markup is embedded in text which provides instructions for programs to process the text. e.g. \TeX
+    \item[Descriptive] Markup is specifically used to label parts of the document for what they are, rather than how they should be processed. e.g. \LaTeX, HTML5
+\end{description}
+
+\newpage
+
+\section{Tables \& Colors}
+
+Code for \textbf{\textcolor{blue}{Table 1}} is written in this subsection. However, it will be rendered on a special page. Change the optional arguments such that the table is drawn at the \fbox{top} or \fbox{bottom} of a page or \fbox{within} this section. The last row of this table shows the width of each column.
+
+\colorbox{orange}{Read more about how colors are represented as numbers.} Try to find out about the HTML notation (both hexadecimal and numeric). Define a custom color with 200 red, 20 green and 200 blue. Define another custom color using \texttt{\textbackslash colorlet} with 60\% red, and 40\% yellow. Now use these colors to write the following equation:
+\[
+\textcolor{mycolor1}{T(n)} = \textcolor{mycolor2}{aT(n/b) + f(n)}
+\]
+
+\section{Figures}
+
+\subsection{Pictures: rotation \& cropping}
+
+Include the MNIT logo and rotate it appropriately. Also include the MNIT building picture but crop the sky and make it is as wide as the text, as shown in Figure 2.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[angle=18, width=0.45\textwidth]{mnit_logo.png}
+    \caption{MNIT logo}
+\end{figure}
+
+\begin{table}[p]
+    \centering
+    \begin{tabular}{|p{2.5cm}|p{2cm}|p{2cm}|p{3.5cm}|}
+        \hline
+        Language & Requires compilation & Output & Use \\ \hline
+        C/C++ & Yes & Executable & To make apps \\ \hline
+        \LaTeX & Yes & PDF & To make documents \\ \hline
+        HTML/CSS/JS & No & Webpage & To make websites \\ \hline
+        2.5 cm & 2 cm & 2 cm & 3.5 cm \\ \hline
+    \end{tabular}
+    \caption{This table should be rendered on a special page.}
+    \label{tab:sample}
+\end{table}
+
+\newpage
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[trim=0 0 0 150, clip, width=\textwidth]{mnit_building.jpg}
+    \caption{This is a floating image and can appear anywhere.}
+\end{figure}
+
+\subsection{Multiple images}
+
+This subsection includes two minipages with equal width.
+
+\vspace{1em}
+
+\noindent
+\begin{minipage}{0.48\textwidth}
+    \centering
+    \includegraphics[width=0.85\textwidth]{mnit_logo.png}
+    \captionof{figure}{This is the first minipage}
+\end{minipage}\hfill
+\begin{minipage}{0.48\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{mnit_building.jpg}
+    \captionof{figure}{This is the second minipage}
+\end{minipage}
+
+\end{document}
