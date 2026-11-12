@@ -8,7 +8,7 @@
 
 ---
 
-## 📌 Repository Overview
+##  Repository Overview
 
 This repository contains academic coursework, practical assignments, engineering implementations, and reference guides developed for the Technical Writing & Tools Laboratory. The workspace is structured into three primary modules:
 
@@ -18,7 +18,7 @@ This repository contains academic coursework, practical assignments, engineering
 
 ---
 
-## 📂 Repository Structure
+## Repository Structure
 
 ```
 TW_/
@@ -58,9 +58,9 @@ TW_/
 
 ---
 
-## 📑 Module Details
+##  Module Details
 
-### 📝 1. LaTeX Module
+###  1. LaTeX Module
 
 The `Latex/` directory hosts progressive lab assignments covering the entire $\LaTeX{}$ document preparation workflow:
 
@@ -92,7 +92,7 @@ pdflatex First_Latex.tex
 
 ---
 
-### 🐙 2. Git & GitHub Module
+### 2. Git & GitHub Module
 
 The `Git and Github/` directory focuses on modern version control practices and reproducible scripting:
 
@@ -106,7 +106,7 @@ The `Git and Github/` directory focuses on modern version control practices and 
 
 ---
 
-### ⚙️ 3. Doxygen Module
+###  3. Doxygen Module
 
 The `Doxygen/` directory contains an object-oriented C++ codebase demonstrating automated source code extraction and API manual generation:
 
@@ -138,7 +138,7 @@ pdflatex refman.tex
 
 ---
 
-## 🛠️ Required Toolchain & Setup
+##  Required Toolchain & Setup
 
 To compile and execute the components in this repository, the following tools are recommended:
 
@@ -153,7 +153,7 @@ To compile and execute the components in this repository, the following tools ar
 
 ---
 
-## 👤 Author Information
+##  Author Information
 
 - **Name:** Aditya
 - **Student ID:** 2025UCP1043
