@@ -1,0 +1,70 @@
+\doxysection{Logger.\+h File Reference}
+\hypertarget{_logger_8h}{}\label{_logger_8h}\index{Logger.h@{Logger.h}}
+
+
+Defines a simple logging utility class and log severity levels.  
+
+
+{\ttfamily \+\#include $<$iostream$>$}\newline
+{\ttfamily \+\#include $<$string$>$}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \doxymbox{\hyperlink{class_logger}{Logger}}
+\begin{DoxyCompactList}\small\item\em A simple logging class to output timestamped or leveled messages to the console. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum class \doxymbox{\hyperlink{_logger_8h_aca1fd1d8935433e6ba2e3918214e07f9}{Log\+Level}} \{ \doxymbox{\hyperlink{_logger_8h_aca1fd1d8935433e6ba2e3918214e07f9a551b723eafd6a31d444fcb2f5920fbd3}{INFO}}
+, \doxymbox{\hyperlink{_logger_8h_aca1fd1d8935433e6ba2e3918214e07f9a059e9861e0400dfbe05c98a841f3f96b}{WARNING}}
+, \doxymbox{\hyperlink{_logger_8h_aca1fd1d8935433e6ba2e3918214e07f9abb1ca97ec761fc37101737ba0aa2e7c5}{ERROR}}
+ \}
+\begin{DoxyCompactList}\small\item\em Represents the severity level of a log message. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Defines a simple logging utility class and log severity levels. 
+
+
+
+Definition in file \doxymbox{\hyperlink{_logger_8h_source}{Logger.\+h}}.
+
+
+
+\label{_logger_8h_doc-enum-members}
+\Hypertarget{_logger_8h_doc-enum-members}
+\doxysubsection{Enumeration Type Documentation}
+\Hypertarget{_logger_8h_aca1fd1d8935433e6ba2e3918214e07f9}\index{Logger.h@{Logger.h}!LogLevel@{LogLevel}}
+\index{LogLevel@{LogLevel}!Logger.h@{Logger.h}}
+\doxysubsubsection{\texorpdfstring{LogLevel}{LogLevel}}
+{\footnotesize\ttfamily \label{_logger_8h_aca1fd1d8935433e6ba2e3918214e07f9} 
+enum class \doxymbox{\hyperlink{_logger_8h_aca1fd1d8935433e6ba2e3918214e07f9}{Log\+Level}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Represents the severity level of a log message. 
+
+\begin{DoxyEnumFields}[2]{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{INFO@{INFO}!Logger.h@{Logger.h}}
+\index{Logger.h@{Logger.h}!INFO@{INFO}}
+}\Hypertarget{_logger_8h_aca1fd1d8935433e6ba2e3918214e07f9a551b723eafd6a31d444fcb2f5920fbd3}\label{_logger_8h_aca1fd1d8935433e6ba2e3918214e07f9a551b723eafd6a31d444fcb2f5920fbd3} 
+INFO&Informational messages highlighting normal application progress. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WARNING@{WARNING}!Logger.h@{Logger.h}}
+\index{Logger.h@{Logger.h}!WARNING@{WARNING}}
+}\Hypertarget{_logger_8h_aca1fd1d8935433e6ba2e3918214e07f9a059e9861e0400dfbe05c98a841f3f96b}\label{_logger_8h_aca1fd1d8935433e6ba2e3918214e07f9a059e9861e0400dfbe05c98a841f3f96b} 
+WARNING&Potentially harmful situations that do not stop execution. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ERROR@{ERROR}!Logger.h@{Logger.h}}
+\index{Logger.h@{Logger.h}!ERROR@{ERROR}}
+}\Hypertarget{_logger_8h_aca1fd1d8935433e6ba2e3918214e07f9abb1ca97ec761fc37101737ba0aa2e7c5}\label{_logger_8h_aca1fd1d8935433e6ba2e3918214e07f9abb1ca97ec761fc37101737ba0aa2e7c5} 
+ERROR&Error events that might still allow the application to continue running. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line \doxymbox{\hyperlink{_logger_8h_source_l00016}{16}} of file \doxymbox{\hyperlink{_logger_8h_source}{Logger.\+h}}.
+

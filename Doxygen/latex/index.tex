@@ -1,0 +1,16 @@
+\chapter{Calculation Engine \& Logger Documentation }
+\hypertarget{index}{}\label{index}\index{Calculation Engine \& Logger Documentation@{Calculation Engine \& Logger Documentation}}
+\hypertarget{index_intro_sec}{}\doxysection{\texorpdfstring{Introduction}{Introduction}}\label{index_intro_sec}
+Welcome to the official documentation for the multi-\/file C++ Calculation Engine project. This project demonstrates modular C++ design paired with automated documentation generation using Doxygen.\hypertarget{index_modules_sec}{}\doxysection{\texorpdfstring{Key Components}{Key Components}}\label{index_modules_sec}
+
+\begin{DoxyItemize}
+\item {\bfseries{\doxylink{class_logger}{Logger} ({\ttfamily \doxylink{_logger_8h}{Logger.\+h}})}}: Handles severity-\/based console logging ({\ttfamily INFO}, {\ttfamily WARNING}, {\ttfamily ERROR}).
+\item {\bfseries{\doxylink{class_calculation_engine}{Calculation\+Engine} ({\ttfamily \doxylink{_calculation___engine_8h}{Calculation\+\_\+\+Engine.\+h}})}}: Executes mathematical functions such as exponentiation while logging operational status.
+\end{DoxyItemize}\hypertarget{index_usage_sec}{}\doxysection{\texorpdfstring{Building \& Running}{Building \& Running}}\label{index_usage_sec}
+Compile the project using {\ttfamily g++}: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{g++\ -\/std=c++17\ \doxymbox{\hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}}.cpp\ -\/o\ calc\_app}
+\DoxyCodeLine{./calc\_app}
+
+\end{DoxyCode}
+ 

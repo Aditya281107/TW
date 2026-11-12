@@ -1,0 +1,102 @@
+\doxysection{Calculation\+Engine Class Reference}
+\hypertarget{class_calculation_engine}{}\label{class_calculation_engine}\index{CalculationEngine@{CalculationEngine}}
+
+
+Performs core mathematical computations with integrated logging.  
+
+
+
+
+{\ttfamily \+\#include $<$Calculation\+\_\+\+Engine.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_calculation_engine_a741691c448a01432abd15f7a67138815}{Calculation\+Engine}} ()
+\begin{DoxyCompactList}\small\item\em Constructs a \doxylink{class_calculation_engine}{Calculation\+Engine} with a configured \doxylink{class_logger}{Logger}. \end{DoxyCompactList}\item 
+double \doxymbox{\hyperlink{class_calculation_engine_a9019abe6d98dbc8ad8010545ed3ee1d6}{power\+\_\+calculation}} (double base, double exponent)
+\begin{DoxyCompactList}\small\item\em Calculates the result of raising a base to an exponent. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_logger}{Logger}} \doxymbox{\hyperlink{class_calculation_engine_a38ce9257fb6ad8deb4a781b614430da5}{logger}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Performs core mathematical computations with integrated logging. 
+
+The \doxylink{class_calculation_engine}{Calculation\+Engine} class wraps standard arithmetic and exponential operations while recording execution steps and edge-\/case warnings through an internal \doxylink{class_logger}{Logger} instance. 
+
+Definition at line \doxymbox{\hyperlink{_calculation___engine_8h_source_l00019}{19}} of file \doxymbox{\hyperlink{_calculation___engine_8h_source}{Calculation\+\_\+\+Engine.\+h}}.
+
+
+
+\label{class_calculation_engine_doc-constructors}
+\Hypertarget{class_calculation_engine_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_calculation_engine_a741691c448a01432abd15f7a67138815}\index{CalculationEngine@{CalculationEngine}!CalculationEngine@{CalculationEngine}}
+\index{CalculationEngine@{CalculationEngine}!CalculationEngine@{CalculationEngine}}
+\doxysubsubsection{\texorpdfstring{CalculationEngine()}{CalculationEngine()}}
+{\footnotesize\ttfamily \label{class_calculation_engine_a741691c448a01432abd15f7a67138815} 
+Calculation\+Engine::\+\+Calculation\+Engine (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructs a \doxylink{class_calculation_engine}{Calculation\+Engine} with a configured \doxylink{class_logger}{Logger}. 
+
+
+
+Definition at line \doxymbox{\hyperlink{_calculation___engine_8h_source_l00027}{27}} of file \doxymbox{\hyperlink{_calculation___engine_8h_source}{Calculation\+\_\+\+Engine.\+h}}.
+
+
+
+\label{class_calculation_engine_doc-func-members}
+\Hypertarget{class_calculation_engine_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_calculation_engine_a9019abe6d98dbc8ad8010545ed3ee1d6}\index{CalculationEngine@{CalculationEngine}!power\_calculation@{power\_calculation}}
+\index{power\_calculation@{power\_calculation}!CalculationEngine@{CalculationEngine}}
+\doxysubsubsection{\texorpdfstring{power\_calculation()}{power\_calculation()}}
+{\footnotesize\ttfamily \label{class_calculation_engine_a9019abe6d98dbc8ad8010545ed3ee1d6} 
+double Calculation\+Engine::\+power\+\_\+calculation (\begin{DoxyParamCaption}\item[{double}]{base}{, }\item[{double}]{exponent}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Calculates the result of raising a base to an exponent. 
+
+Computes $ \text{base}^{\text{exponent}} $ using standard floating-\/point arithmetic and logs the operation. 
+\begin{DoxyParams}{Parameters}
+{\em base} & The base value to be raised. \\
+\hline
+{\em exponent} & The power to which the base is raised. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The calculated result of base raised to the power of exponent.
+\end{DoxyReturn}
+\begin{DoxyRefDesc}{Todo}
+\item[\doxymbox{\hyperlink{todo__todo000001}{Todo}}]Add overflow checks and handle negative base with fractional exponents. \end{DoxyRefDesc}
+
+
+Definition at line \doxymbox{\hyperlink{_calculation___engine_8h_source_l00038}{38}} of file \doxymbox{\hyperlink{_calculation___engine_8h_source}{Calculation\+\_\+\+Engine.\+h}}.
+
+
+
+\label{class_calculation_engine_doc-variable-members}
+\Hypertarget{class_calculation_engine_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_calculation_engine_a38ce9257fb6ad8deb4a781b614430da5}\index{CalculationEngine@{CalculationEngine}!logger@{logger}}
+\index{logger@{logger}!CalculationEngine@{CalculationEngine}}
+\doxysubsubsection{\texorpdfstring{logger}{logger}}
+{\footnotesize\ttfamily \label{class_calculation_engine_a38ce9257fb6ad8deb4a781b614430da5} 
+\doxymbox{\hyperlink{class_logger}{Logger}} Calculation\+Engine::\+logger\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_calculation___engine_8h_source_l00021}{21}} of file \doxymbox{\hyperlink{_calculation___engine_8h_source}{Calculation\+\_\+\+Engine.\+h}}.
+
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{_calculation___engine_8h}{Calculation\+\_\+\+Engine.\+h}}\end{DoxyCompactItemize}

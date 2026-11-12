@@ -1,0 +1,114 @@
+\doxysection{Logger Class Reference}
+\hypertarget{class_logger}{}\label{class_logger}\index{Logger@{Logger}}
+
+
+A simple logging class to output timestamped or leveled messages to the console.  
+
+
+
+
+{\ttfamily \+\#include $<$Logger.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_logger_a8a400f0228305b74fa87064440a741fa}{Logger}} (const std::\+string \&log\+Prefix, \doxymbox{\hyperlink{_logger_8h_aca1fd1d8935433e6ba2e3918214e07f9}{Log\+Level}} level=\doxymbox{\hyperlink{_logger_8h_aca1fd1d8935433e6ba2e3918214e07f9a551b723eafd6a31d444fcb2f5920fbd3}{Log\+Level::\+\+INFO}})
+\begin{DoxyCompactList}\small\item\em Constructs a new \doxylink{class_logger}{Logger} object. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_logger_ab588e2088c93df300a0bab12e82f41e7}{log}} (\doxymbox{\hyperlink{_logger_8h_aca1fd1d8935433e6ba2e3918214e07f9}{Log\+Level}} level, const std::\+string \&message) const
+\begin{DoxyCompactList}\small\item\em Logs a message with a given severity level. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std::\+string \doxymbox{\hyperlink{class_logger_a1ece42ce29de189ccbf0ad0034bc8339}{prefix}}
+\item 
+\doxymbox{\hyperlink{_logger_8h_aca1fd1d8935433e6ba2e3918214e07f9}{Log\+Level}} \doxymbox{\hyperlink{class_logger_a5c04539bdc9472986e9b3c19ab121251}{min\+Level}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A simple logging class to output timestamped or leveled messages to the console. 
+
+Definition at line \doxymbox{\hyperlink{_logger_8h_source_l00026}{26}} of file \doxymbox{\hyperlink{_logger_8h_source}{Logger.\+h}}.
+
+
+
+\label{class_logger_doc-constructors}
+\Hypertarget{class_logger_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_logger_a8a400f0228305b74fa87064440a741fa}\index{Logger@{Logger}!Logger@{Logger}}
+\index{Logger@{Logger}!Logger@{Logger}}
+\doxysubsubsection{\texorpdfstring{Logger()}{Logger()}}
+{\footnotesize\ttfamily \label{class_logger_a8a400f0228305b74fa87064440a741fa} 
+Logger::\+\+Logger (\begin{DoxyParamCaption}\item[{const std::\+string \&}]{log\+Prefix}{, }\item[{\doxymbox{\hyperlink{_logger_8h_aca1fd1d8935433e6ba2e3918214e07f9}{Log\+Level}}}]{level}{ = {\ttfamily \doxymbox{\hyperlink{_logger_8h_aca1fd1d8935433e6ba2e3918214e07f9a551b723eafd6a31d444fcb2f5920fbd3}{Log\+Level::\+\+INFO}}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructs a new \doxylink{class_logger}{Logger} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em log\+Prefix} & A string prefix prepended to every log message (e.\+g., "{}\+[\+Engine]\+"{}). \\
+\hline
+{\em level} & The minimum \doxylink{_logger_8h_aca1fd1d8935433e6ba2e3918214e07f9}{Log\+Level} threshold required for a message to be printed. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \doxymbox{\hyperlink{_logger_8h_source_l00037}{37}} of file \doxymbox{\hyperlink{_logger_8h_source}{Logger.\+h}}.
+
+
+
+\label{class_logger_doc-func-members}
+\Hypertarget{class_logger_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_logger_ab588e2088c93df300a0bab12e82f41e7}\index{Logger@{Logger}!log@{log}}
+\index{log@{log}!Logger@{Logger}}
+\doxysubsubsection{\texorpdfstring{log()}{log()}}
+{\footnotesize\ttfamily \label{class_logger_ab588e2088c93df300a0bab12e82f41e7} 
+void Logger::\+log (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{_logger_8h_aca1fd1d8935433e6ba2e3918214e07f9}{Log\+Level}}}]{level}{, }\item[{const std::\+string \&}]{message}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Logs a message with a given severity level. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em level} & The severity level of the message. \\
+\hline
+{\em message} & The text content to be logged. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \doxymbox{\hyperlink{_logger_8h_source_l00045}{45}} of file \doxymbox{\hyperlink{_logger_8h_source}{Logger.\+h}}.
+
+
+
+\label{class_logger_doc-variable-members}
+\Hypertarget{class_logger_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_logger_a5c04539bdc9472986e9b3c19ab121251}\index{Logger@{Logger}!minLevel@{minLevel}}
+\index{minLevel@{minLevel}!Logger@{Logger}}
+\doxysubsubsection{\texorpdfstring{minLevel}{minLevel}}
+{\footnotesize\ttfamily \label{class_logger_a5c04539bdc9472986e9b3c19ab121251} 
+\doxymbox{\hyperlink{_logger_8h_aca1fd1d8935433e6ba2e3918214e07f9}{Log\+Level}} Logger::\+min\+Level\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_logger_8h_source_l00029}{29}} of file \doxymbox{\hyperlink{_logger_8h_source}{Logger.\+h}}.
+
+\Hypertarget{class_logger_a1ece42ce29de189ccbf0ad0034bc8339}\index{Logger@{Logger}!prefix@{prefix}}
+\index{prefix@{prefix}!Logger@{Logger}}
+\doxysubsubsection{\texorpdfstring{prefix}{prefix}}
+{\footnotesize\ttfamily \label{class_logger_a1ece42ce29de189ccbf0ad0034bc8339} 
+std::\+string Logger::\+prefix\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \doxymbox{\hyperlink{_logger_8h_source_l00028}{28}} of file \doxymbox{\hyperlink{_logger_8h_source}{Logger.\+h}}.
+
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{_logger_8h}{Logger.\+h}}\end{DoxyCompactItemize}
