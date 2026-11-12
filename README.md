@@ -4,7 +4,7 @@
 **Student ID:** 2025UCP1043  
 **Institution:** Malaviya National Institute of Technology (MNIT) Jaipur  
 **Department:** Computer Science and Engineering  
-**Course:** Technical Writing Lab (TW Lab)
+**Course:** Technical Writing  
 
 ---
 
