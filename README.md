@@ -1,4 +1,4 @@
-# Technical Writing & Engineering Tools Repository
+# Technical Writing
 
 **Author:** Aditya  
 **Student ID:** 2025UCP1043  
